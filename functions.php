@@ -6,6 +6,7 @@ try
 {
 
 	
+	
 	$dsn = getenv('MYSQL_DSN');
 	$user = getenv('MYSQL_USER');
 	$password = getenv('MYSQL_PASSWORD');

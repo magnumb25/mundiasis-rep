@@ -82,7 +82,7 @@ if (isset($_SESSION['email_prof']) && isset($_SESSION['code_prof'])) {
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-        <p class="login-box-msg">Sign in to start your session(OK)</p>
+        <p class="login-box-msg">Sign in to start your session(OK2)</p>
         <div id="msg-error">
         </div>
         <form id="form-login" action="index.php" method="POST">
