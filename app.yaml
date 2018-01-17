@@ -1,0 +1,46 @@
+runtime: php
+api_version: 1
+env: flex
+
+runtime_config:
+    document_root: .
+
+handlers:
+- url: /bootstrap
+  static_dir: bootstrap
+
+- url: /build
+  static_dir: build
+
+- url: /db
+  static_dir: db
+
+- url: /dist
+  static_dir: dist
+
+- url: /documentation
+  static_dir: documentation
+
+- url: /gplus-quickstart-php-master
+  static_dir: gplus-quickstart-php-master
+
+- url: /plugins
+  static_dir: plugins
+
+- url: /tmp
+  static_dir: tmp
+
+#[START env]
+env_variables:
+    # Replace USER, PASSWORD, DATABASE, and CONNECTION_NAME with the
+    # values obtained when configuring your Cloud SQL instance.
+    MYSQL_USER: root
+    MYSQL_PASSWORD: '123456'
+    MYSQL_DSN: mysql:dbname=scolarite;unix_socket=/cloudsql/hoba-cloud-project-paas:us-central1:db-mundiasis
+#[END env]
+
+#[START cloudsql_settings]
+# Use the connection name obtained when configuring your Cloud SQL instance.
+beta_settings:
+    cloud_sql_instances: "hoba-cloud-project-paas:us-central1:db-mundiasis"
+#[END cloudsql_settings]
