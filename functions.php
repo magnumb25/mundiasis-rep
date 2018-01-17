@@ -5,15 +5,16 @@ if (!session_id())
 try
 {
 
-	/*
+	
 	$dsn = getenv('MYSQL_DSN');
 	$user = getenv('MYSQL_USER');
 	$password = getenv('MYSQL_PASSWORD');
-	*/
 	
+	/*
 	$dsn = "mysql:dbname=scolarite;host=localhost;";
 	$user = "root";
 	$password = "";
+	*/
 	
 	$bdd = new PDO($dsn, $user, $password);
 	$conn = $bdd;
