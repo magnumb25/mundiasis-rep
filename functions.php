@@ -15,7 +15,6 @@ try
 	$user = "root";
 	$password = "";
 	*/
-	
 	$bdd = new PDO($dsn, $user, $password);
 	$conn = $bdd;
 
