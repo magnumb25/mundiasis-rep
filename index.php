@@ -10,15 +10,8 @@ if (isset($_SESSION['email_prof']) && isset($_SESSION['code_prof'])) {
 } else if (!empty($_POST['login']) && !empty($_POST['password'])) {
     try
     {
-      /*
-        $dsn      = getenv('MYSQL_DSN');
-        $user     = getenv('MYSQL_USER');
-        $password = getenv('MYSQL_PASSWORD');
-      */
-        //$opppo    = new PDO($dsn, $user, $password);
       $opppo = $conn;
       
-
     } catch (Exception $e) {
         die('Erreur : ' . $e->getMessage());
     }
@@ -82,7 +75,7 @@ if (isset($_SESSION['email_prof']) && isset($_SESSION['code_prof'])) {
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-        <p class="login-box-msg">Sign in to start your session(OK2)</p>
+        <p class="login-box-msg">Sign in to start your session</p>
         <div id="msg-error">
         </div>
         <form id="form-login" action="index.php" method="POST">

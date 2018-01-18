@@ -12,7 +12,7 @@ try
 	$password = getenv('MYSQL_PASSWORD');
 	
 	/*
-	$dsn = "mysql:dbname=scolarite;host=localhost;";
+	$dsn = "mysql:dbname=scolarite;host=localhost;charset=utf8;";
 	$user = "root";
 	$password = "";
 	*/
